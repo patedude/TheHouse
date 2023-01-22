@@ -6,8 +6,29 @@
     <title>Unity WebGL Player | The House</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      @font-face { font-family: decrepit; src: url('decrepit.ttf'); } 
+      h1 {
+        color: #ff5000;
+        text-align: center;
+        font-family: "decrepit";
+        font-size: 60px;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+      #footer {
+        position:absolute;
+        text-align: center;
+        bottom:0;
+        width:100%;
+        height:50px;
+      }
+</style>
   </head>
   <body>
+    <h1>The House</h1>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -22,6 +43,10 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">The House</div>
       </div>
+    </div>
+    <div id="footer">
+      The House &copy; patedude 2022-2023, header font 'Decrepit BRK Font' Made by: Ænigma Fonts<br>
+      Made with Unity / WebGL
     </div>
     <script>
       var container = document.querySelector("#unity-container");
